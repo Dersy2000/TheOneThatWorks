@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mindcraft3495.scout.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="388dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bRegister"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/tvLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="If You Already Have An Account, Login Here."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bRegister" />
+</android.support.constraint.ConstraintLayout>
