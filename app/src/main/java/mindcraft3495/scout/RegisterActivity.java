@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity implements OnClickListen
     private EditText etEmail;
     private EditText etPassword;
     private Button bRegister;
-     TextView tvLogin;
+    private TextView tvLogin;
 
     private FirebaseAuth mAuth;
 
