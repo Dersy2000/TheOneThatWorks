@@ -37,8 +37,7 @@ public class RegisterActivity extends AppCompatActivity implements OnClickListen
         etPassword = findViewById(R.id.etPassword);
         tvLogin = findViewById(R.id.tvLogin);
 
-        Button bLogin;
-        findViewById(R.id.bRegister).setOnClickListener(this);
+
 
         mAuth = FirebaseAuth.getInstance();
     }

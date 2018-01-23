@@ -38,6 +38,7 @@
         <activity android:name="mindcraft3495.scout.RegisterActivity" />
         <activity android:name="mindcraft3495.scout.AccountActivity" />
         <activity android:name="mindcraft3495.scout.Autonomous" />
+        <activity android:name="mindcraft3495.scout.Teleop" />
 
         <meta-data
             android:name="android.support.VERSION"

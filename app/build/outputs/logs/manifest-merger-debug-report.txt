@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bbd7d9e45490fbceea6a1f74689edd4d\AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\b7193951e9408d94a1b0699549b8476a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d7cf816add004d4d429afbf67b51b098\AndroidManifest.xml:2:1-11:12
@@ -26,25 +26,25 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\7nys\.gra
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e355f88a013ea5435acfef9428689182\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\be3e60370171e1e92590c40534f7171a\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0fcb6028fed39ed2eb87bd00269d505d\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bbd7d9e45490fbceea6a1f74689edd4d\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bbd7d9e45490fbceea6a1f74689edd4d\AndroidManifest.xml:5:5-20
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\7nys\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\b7193951e9408d94a1b0699549b8476a\AndroidManifest.xml:25:5-29:19
@@ -120,9 +120,13 @@ ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:20:19-50
 activity#mindcraft3495.scout.Autonomous
-ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:21:9-57
+ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:21:9-48
 	android:name
 		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:21:19-45
+activity#mindcraft3495.scout.Teleop
+ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:22:9-53
+	android:name
+		ADDED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml:22:19-41
 uses-sdk
 INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\AndroidManifest.xml
