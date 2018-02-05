@@ -30,7 +30,7 @@ public class AccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account);
         mAuth = FirebaseAuth.getInstance();
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.menuLogout);
 
 
 

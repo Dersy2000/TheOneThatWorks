@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="com.google.firebase:firebase-analytics-impl-11.8.0">
+    <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_google_firebase_firebase_analytics_impl_11_0_4.xml
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.4.aar/41d3f96c22c73e6b3ec7a1d007d241ee/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.4.aar/41d3f96c22c73e6b3ec7a1d007d241ee/jars/classes.jar!/" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/4873a189f8bc56770d0be52383dac820/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/4873a189f8bc56770d0be52383dac820/jars/classes.jar!/" />
+>>>>>>> 19638e4cc4364c99f3763a39516f8e9c1de10721:.idea/libraries/com_google_firebase_firebase_analytics_impl_11_8_0.xml
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

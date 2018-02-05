@@ -19,7 +19,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".Autonomous" />
-        <activity android:name=".Teleop"></activity>
+        <activity android:name=".Teleop" />
+        <activity android:name=".Test"></activity>
     </application>
 
 </manifest>
