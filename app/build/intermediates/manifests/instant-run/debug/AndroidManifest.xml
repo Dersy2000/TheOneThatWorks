@@ -11,7 +11,11 @@
     <!-- Required permission for App measurement to run. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+=======
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+>>>>>>> eda0fd956be52648b7a4cb9dd8c07a0912103bba
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
@@ -37,15 +41,22 @@
             </intent-filter>
         </activity>
         <activity android:name="mindcraft3495.scout.RegisterActivity" />
+<<<<<<< HEAD
         <activity android:name="mindcraft3495.scout.Autonomous" />
         <activity android:name="mindcraft3495.scout.Teleop" />
         <activity android:name="mindcraft3495.scout.Test" />
         <activity android:name="mindcraft3495.scout.preMatch" />
+=======
+        <activity android:name="mindcraft3495.scout.AccountActivity" />
+        <activity android:name="mindcraft3495.scout.Autonomous" />
+        <activity android:name="mindcraft3495.scout.Teleop" />
+>>>>>>> eda0fd956be52648b7a4cb9dd8c07a0912103bba
 
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />
 
+<<<<<<< HEAD
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
@@ -54,6 +65,8 @@
             android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
+=======
+>>>>>>> eda0fd956be52648b7a4cb9dd8c07a0912103bba
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
             android:enabled="true"
@@ -79,6 +92,14 @@
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+>>>>>>> eda0fd956be52648b7a4cb9dd8c07a0912103bba
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
             android:exported="true"
@@ -90,7 +111,18 @@
             </intent-filter>
         </receiver>
         <!--
+<<<<<<< HEAD
              FirebaseInstanceIdService performs security checks at runtime,
+=======
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+>>>>>>> eda0fd956be52648b7a4cb9dd8c07a0912103bba
              no need for explicit permissions despite exported="true"
         -->
         <service
@@ -107,11 +139,14 @@
             android:exported="false"
             android:initOrder="100" />
 
+<<<<<<< HEAD
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
+=======
+>>>>>>> eda0fd956be52648b7a4cb9dd8c07a0912103bba
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
