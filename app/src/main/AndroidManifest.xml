@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".AccountActivity" />
         <activity android:name=".Autonomous" />
         <activity android:name=".Teleop" />
-        <activity android:name=".Test"></activity>
+
+        <activity android:name=".preMatch"></activity>
     </application>
 
 </manifest>

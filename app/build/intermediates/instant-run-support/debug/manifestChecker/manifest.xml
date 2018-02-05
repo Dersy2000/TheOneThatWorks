@@ -37,10 +37,17 @@
             </intent-filter>
         </activity>
         <activity android:name="mindcraft3495.scout.RegisterActivity" />
+<<<<<<< HEAD
         <activity android:name="mindcraft3495.scout.AccountActivity" />
         <activity android:name="mindcraft3495.scout.Autonomous" />
         <activity android:name="mindcraft3495.scout.Teleop" />
         <activity android:name="mindcraft3495.scout.Test" />
+=======
+        <activity android:name="mindcraft3495.scout.Autonomous" />
+        <activity android:name="mindcraft3495.scout.Teleop" />
+        <activity android:name="mindcraft3495.scout.Test" />
+        <activity android:name="mindcraft3495.scout.preMatch" />
+>>>>>>> 4899091557efa4e9e35e33d07f022b557802528b
 
         <meta-data
             android:name="android.support.VERSION"
