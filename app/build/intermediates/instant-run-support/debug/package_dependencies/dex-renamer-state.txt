@@ -1,0 +1,4 @@
+#Mon Feb 05 13:40:07 PST 2018
+base.0=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
+path.0=classes.dex
+renamed.0=classes.dex
