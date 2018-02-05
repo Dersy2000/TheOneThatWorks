@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() != null){
-                  startActivity(new Intent(LoginActivity.this, AccountActivity.class));
+                  startActivity(new Intent(LoginActivity.this, preMatch.class));
                     //THIS HERE IS THE BANE OF MY EXISTENCE
                 }
             }
@@ -55,9 +55,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 startSignIn();
-
             }
         });
     }
