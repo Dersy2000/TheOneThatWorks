@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="x86_64,x86"
     api-level="26"
-    build-mode="FULL"
+    build-mode="HOT_WARM"
     density="560dpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1517870310743"
+    timestamp="1517888870101"
     token="2604341863153803093"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="172" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -24,66 +24,18 @@
         duration="0" />
 
     <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\outputs\apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
         build-mode="FULL"
-        timestamp="1517870310743"
+        timestamp="1517887920291"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -92,14 +44,37 @@
             location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1517888870101"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

@@ -20,7 +20,7 @@ public class preMatch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_match);
         mAuth = FirebaseAuth.getInstance();
-        Toolbar toolbar = findViewById(R.id.menuLogout);
+
 
 
         }

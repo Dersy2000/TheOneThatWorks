@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Scout</string>
     <string name="Account">Account</string>
+    <string name="Password">Password</string>
 </resources>
