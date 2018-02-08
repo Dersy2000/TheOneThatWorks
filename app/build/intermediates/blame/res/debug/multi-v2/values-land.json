@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "C:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\7nys\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b7193951e9408d94a1b0699549b8476a\\res\\values-land\\values-land.xml",
-=======
-            "outputFile": "C:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\GoAuc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\252f2a28ece7ff06a12599bc8376fbdd\\res\\values-land\\values-land.xml",
->>>>>>> 5ce754710b2e8cb32c01ba871f1268eca7ce73a1
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -19,7 +12,6 @@
                         "endColumns": "69,63,70,67",
                         "endOffsets": "120,184,255,323"
                     }
-<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\7nys\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\0fb3e9b4619f7e500ed7c1498ccf844e\\res\\values-land\\values-land.xml",
@@ -39,8 +31,6 @@
                         "endColumns": "12",
                         "endOffsets": "505"
                     }
-=======
->>>>>>> 5ce754710b2e8cb32c01ba871f1268eca7ce73a1
                 }
             ]
         }

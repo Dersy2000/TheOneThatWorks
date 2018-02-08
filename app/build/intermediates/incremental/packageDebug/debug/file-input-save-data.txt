@@ -1,24 +1,5 @@
 #Internal package file, do not edit.
-<<<<<<< HEAD
-#Mon Feb 05 19:32:19 PST 2018
-=======
-<<<<<<< HEAD
-#Mon Feb 05 13:40:11 PST 2018
-2.base=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\34
-5.set=DEX
-0.path=classes.dex
-2.baseType=DIRECTORY
-3.base=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\31
-2.set=DEX
-1.path=classes.dex
-4.base=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\33
-count=6
-5.baseType=DIRECTORY
-2.path=classes.dex
-5.base=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\36
-=======
-#Mon Feb 05 14:27:06 PST 2018
->>>>>>> 5ce754710b2e8cb32c01ba871f1268eca7ce73a1
+#Wed Feb 07 19:48:18 PST 2018
 2.base=C\:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 5.set=DEX
 0.path=classes.dex
@@ -31,7 +12,6 @@ count=6
 5.baseType=DIRECTORY
 2.path=classes.dex
 5.base=C\:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
->>>>>>> 4899091557efa4e9e35e33d07f022b557802528b
 4.set=DEX
 3.path=classes.dex
 3.baseType=DIRECTORY
@@ -39,16 +19,9 @@ count=6
 4.path=classes.dex
 1.baseType=DIRECTORY
 5.path=classes.dex
-<<<<<<< HEAD
-0.base=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\35
-0.baseType=DIRECTORY
-3.set=DEX
-1.base=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\32
-=======
 0.base=C\:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 0.baseType=DIRECTORY
 3.set=DEX
 1.base=C\:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
->>>>>>> 4899091557efa4e9e35e33d07f022b557802528b
 4.baseType=DIRECTORY
 0.set=DEX

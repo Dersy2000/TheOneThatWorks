@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "C:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\7nys\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b7193951e9408d94a1b0699549b8476a\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
-=======
-            "outputFile": "C:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\GoAuc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\252f2a28ece7ff06a12599bc8376fbdd\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
->>>>>>> 5ce754710b2e8cb32c01ba871f1268eca7ce73a1
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

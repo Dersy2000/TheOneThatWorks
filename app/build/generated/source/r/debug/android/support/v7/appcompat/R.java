@@ -607,7 +607,7 @@ public final class R {
         public static final int add = 0x7f08001b;
         public static final int alertTitle = 0x7f08001e;
         public static final int async = 0x7f080021;
-        public static final int blocking = 0x7f080027;
+        public static final int blocking = 0x7f080034;
         public static final int buttonPanel = 0x7f08003b;
         public static final int cancel_action = 0x7f08003c;
         public static final int checkbox = 0x7f080041;
@@ -675,11 +675,11 @@ public final class R {
         public static final int text2 = 0x7f0800bb;
         public static final int textSpacerNoButtons = 0x7f0800bd;
         public static final int textSpacerNoTitle = 0x7f0800be;
-        public static final int time = 0x7f0800cc;
-        public static final int title = 0x7f0800cd;
-        public static final int titleDividerNoCustom = 0x7f0800ce;
-        public static final int title_template = 0x7f0800cf;
-        public static final int topPanel = 0x7f0800d1;
+        public static final int time = 0x7f0800c4;
+        public static final int title = 0x7f0800c5;
+        public static final int titleDividerNoCustom = 0x7f0800c6;
+        public static final int title_template = 0x7f0800c7;
+        public static final int topPanel = 0x7f0800c9;
         public static final int uniform = 0x7f0800da;
         public static final int up = 0x7f0800db;
         public static final int wrap_content = 0x7f0800e2;
