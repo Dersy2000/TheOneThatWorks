@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Mon Feb 05 13:40:07 PST 2018
-base.0=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
-=======
-#Mon Feb 05 10:38:09 PST 2018
-base.0=C\:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
->>>>>>> 4899091557efa4e9e35e33d07f022b557802528b
+#Mon Feb 05 16:55:15 PST 2018
+base.0=C\:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 path.0=classes.dex
 renamed.0=classes.dex
