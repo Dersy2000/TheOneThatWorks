@@ -74,7 +74,7 @@ public final class R {
         public static final int action_text = 0x7f080018;
         public static final int actions = 0x7f080019;
         public static final int async = 0x7f080021;
-        public static final int blocking = 0x7f080027;
+        public static final int blocking = 0x7f080039;
         public static final int cancel_action = 0x7f08003c;
         public static final int chronometer = 0x7f080042;
         public static final int end_padder = 0x7f080056;
@@ -95,8 +95,8 @@ public final class R {
         public static final int status_bar_latest_event_content = 0x7f0800b6;
         public static final int text = 0x7f0800ba;
         public static final int text2 = 0x7f0800bb;
-        public static final int time = 0x7f0800cc;
-        public static final int title = 0x7f0800cd;
+        public static final int time = 0x7f0800c2;
+        public static final int title = 0x7f0800c3;
     }
     public static final class integer {
         public static final int cancel_button_image_alpha = 0x7f090004;

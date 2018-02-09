@@ -18,6 +18,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Map;
 
+import static java.lang.String.valueOf;
+
 public class Teleop extends AppCompatActivity {
     FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -43,9 +45,12 @@ public class Teleop extends AppCompatActivity {
         Button bRobot;
         Button bRobot2;
 
-        DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+        private DatabaseReference mDataBase;
 
         private int mCounter = 0;
+        private int scaleCounter = 0;
+        private int exchangeCounter = 0;
+        private int fumbledCounter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +79,65 @@ public class Teleop extends AppCompatActivity {
         bRobot= (Button)findViewById(R.id.bRobot);
         bRobot2 = (Button)findViewById(R.id.bRobot2);
 
+        mDataBase = FirebaseDatabase.getInstance().getReference();
+
+
+        bSwitchPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mCounter++;
+                tvSwitch0.setText(valueOf(mCounter));
+            }
+        });
+        bSwitchMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mCounter--;
+                tvSwitch0.setText(valueOf(mCounter));
+            }
+        });
+        bScaleMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scaleCounter--;
+                tvScale0.setText(valueOf(scaleCounter));
+            }
+        });
+        bScalePlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scaleCounter++;
+                tvScale0.setText(valueOf(scaleCounter));
+            }
+        });
+        bExchangeMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exchangeCounter--;
+                tvExchange0.setText(valueOf(exchangeCounter));
+            }
+        });
+        bExchangePlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exchangeCounter++;
+                tvExchange0.setText(valueOf(exchangeCounter));
+            }
+        });
+        bFumbledPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fumbledCounter++;
+                tvFumbled0.setText(valueOf(fumbledCounter));
+            }
+        });
+        bFumbledMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fumbledCounter--;
+                tvFumbled0.setText(valueOf(fumbledCounter));
+            }
+        });
     }
 
     @Override
@@ -99,17 +163,8 @@ public class Teleop extends AppCompatActivity {
         finish();
     }
 
-    private void addNumSwitch(){
-         final TextView tvSwitch = (TextView)findViewById(R.id.tvSwitch);
-         Button bSwitchPlus = (Button)findViewById(R.id.bSwitchPlus);
-         bSwitchPlus.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 mCounter++;
-                 tvSwitch.setText(Integer.toString(mCounter));
-             }
-         });
 
-    }
+
+
 }
 
