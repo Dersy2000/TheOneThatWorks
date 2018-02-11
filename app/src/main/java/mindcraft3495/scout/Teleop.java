@@ -145,6 +145,15 @@ public class Teleop extends AppCompatActivity {
         });
     }
 
+    private void saveTeleopInfo(){
+        String switchBoxes = tvSwitch0.getText().toString();
+        String scaleBoxes = tvScale0.getText().toString();
+        String fumbledBoxes = tvFumbled0.getText().toString();
+        String exchangeBoxes = tvExchange0.getText().toString();
+        TeleopActivity teleopActivity = new TeleopActivity(switchBoxes, scaleBoxes, fumbledBoxes, exchangeBoxes);
+        mDataBase.child("Team").child("254").child("Teleop").setValue(teleopActivity);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -158,6 +167,11 @@ public class Teleop extends AppCompatActivity {
         if(id==R.id.menuLogout){
             logout();
             return true;
+        }
+        if(id == R.id.saveData){
+            saveTeleopInfo();
+            Intent intent = new Intent(Teleop.this, preMatch.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

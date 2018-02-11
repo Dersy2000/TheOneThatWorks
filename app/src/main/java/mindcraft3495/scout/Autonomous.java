@@ -1,6 +1,7 @@
 package mindcraft3495.scout;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import static java.lang.String.valueOf;
 
@@ -26,15 +29,25 @@ public class Autonomous extends AppCompatActivity {
     Button bSwitch;
     Button bScale;
     Button bAuto;
+    boolean boSwitch;
+    boolean boScale;
+    boolean auto;
 
     private int boxCounter = 0;
 
+<<<<<<< HEAD
+=======
+    DatabaseReference rootRef,demoRef;
+>>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autonomous);
         mAuth = FirebaseAuth.getInstance();
+
+        rootRef = FirebaseDatabase.getInstance().getReference().child("Teams");
+        demoRef = rootRef.child("Team").child("254").child("Auto");
 
         tvBox = (TextView)findViewById(R.id.tvBox);
         bMinus = (Button)findViewById(R.id.bMinus);
@@ -43,6 +56,11 @@ public class Autonomous extends AppCompatActivity {
         bSwitch = (Button)findViewById(R.id.bSwitch);
         bScale = (Button)findViewById(R.id.bScale);
         bAuto = (Button)findViewById(R.id.bAuto);
+        boSwitch = false;
+        boSwitch = false;
+        auto = false;
+
+
 
         bMinus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +76,57 @@ public class Autonomous extends AppCompatActivity {
                 tv0.setText(valueOf(boxCounter));
             }
         });
+        bSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!boSwitch){
+                    boSwitch = true;
+                    bSwitch.setBackgroundColor(Color.GREEN);
+                }else{
+                    boSwitch = false;
+                    bSwitch.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+        bScale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!boScale){
+                    boScale = true;
+                    bScale.setBackgroundColor(Color.GREEN);
+                }else{
+                    boScale = false;
+                    bScale.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+        bAuto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!auto){
+                    auto = true;
+                    bAuto.setBackgroundColor(Color.GREEN);
+                }else{
+                    auto = false;
+                    bAuto.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+
+
+    }
+    private void  saveAutoInfo(){
+        String autoBox = tv0.getText().toString();
+        String littleScale = Boolean.toString(boSwitch);
+        String Switch = Boolean.toString(boScale);
+        String Autoline = Boolean.toString(auto);
+        AutoInfo autoInfo = new AutoInfo(autoBox, littleScale, Switch, Autoline);
+
+        preMatch match1 = new preMatch();
+        String team = match1.getTeam();
+        String match = match1.getMatch();
+        rootRef.push().child("Team "+team).child("Round "+match).child("Auto").setValue(autoInfo);
+        //demoRef.setValue(autoInfo);
     }
 
     @Override
@@ -75,6 +144,7 @@ public class Autonomous extends AppCompatActivity {
             return true;
         }
         if(id == R.id.Teleop) {
+            saveAutoInfo();
             Intent teleop = new Intent(Autonomous.this, Teleop.class);
             startActivity(teleop);
         }
@@ -86,4 +156,14 @@ public class Autonomous extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+
+
+
+
+
+>>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba

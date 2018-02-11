@@ -6,13 +6,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class preMatch extends AppCompatActivity {
+
+
     FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    DatabaseReference rootRef;
+    EditText etMatch,etTeam;
+    String Team;
+    String match;
 
 
     @Override
@@ -20,10 +30,19 @@ public class preMatch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_match);
         mAuth = FirebaseAuth.getInstance();
+        rootRef = FirebaseDatabase.getInstance().getReference();
+        etMatch = (EditText)findViewById(R.id.etMatch);
+        etTeam = (EditText)findViewById(R.id.etTeam);
+        this.Team = etTeam.getText().toString();
+        this.match = etMatch.getText().toString();
+    }
 
-
-
-        }
+    public String getTeam(){
+        return this.Team;
+    }
+    public String getMatch(){
+        return this.match;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,6 +59,7 @@ public class preMatch extends AppCompatActivity {
             return true;
         }
         if(id == R.id.auto) {
+
             Intent auto = new Intent(preMatch.this, Autonomous.class);
             startActivity(auto);
         }
