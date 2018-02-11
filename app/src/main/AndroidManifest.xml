@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".Autonomous" />
-        <activity android:name=".Teleop" />
+        <activity android:name="RegisterActivity" />
+        <activity android:name="Autonomous" />
+        <activity android:name="Teleop" />
 
         <activity android:name=".preMatch"></activity>
     </application>
