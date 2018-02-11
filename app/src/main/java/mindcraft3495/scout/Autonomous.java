@@ -35,10 +35,9 @@ public class Autonomous extends AppCompatActivity {
 
     private int boxCounter = 0;
 
-<<<<<<< HEAD
-=======
+
     DatabaseReference rootRef,demoRef;
->>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +46,7 @@ public class Autonomous extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         rootRef = FirebaseDatabase.getInstance().getReference().child("Teams");
-        demoRef = rootRef.child("Team").child("254").child("Auto");
+        demoRef = rootRef.child("254").child("Auto");
 
         tvBox = (TextView)findViewById(R.id.tvBox);
         bMinus = (Button)findViewById(R.id.bMinus);
@@ -156,9 +155,6 @@ public class Autonomous extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-<<<<<<< HEAD
-}
-=======
 
 }
 
@@ -166,4 +162,7 @@ public class Autonomous extends AppCompatActivity {
 
 
 
->>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
+
+
+
+
