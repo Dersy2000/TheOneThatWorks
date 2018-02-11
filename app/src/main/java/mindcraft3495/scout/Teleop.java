@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -57,6 +58,10 @@ public class Teleop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teleop);
 
+<<<<<<< HEAD
+    }
+}
+=======
         tvScale = (TextView)findViewById(R.id.tvScale);
         bScalePlus = (Button)findViewById(R.id.bScalePlus);
         bScaleMinus = (Button)findViewById(R.id.bScaleMinus);
@@ -182,3 +187,4 @@ public class Teleop extends AppCompatActivity {
 
 }
 
+>>>>>>> 9812d5661e73302c6eb850f71b97c8d374f29112

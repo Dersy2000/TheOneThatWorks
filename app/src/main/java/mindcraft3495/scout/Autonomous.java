@@ -17,6 +17,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import static java.lang.String.valueOf;
 
+import com.google.firebase.database.DatabaseReference;
+
 public class Autonomous extends AppCompatActivity {
     FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -33,7 +35,10 @@ public class Autonomous extends AppCompatActivity {
 
     private int boxCounter = 0;
 
+<<<<<<< HEAD
+=======
     DatabaseReference rootRef,demoRef;
+>>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,6 +156,9 @@ public class Autonomous extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+<<<<<<< HEAD
+}
+=======
 
 }
 
@@ -158,3 +166,4 @@ public class Autonomous extends AppCompatActivity {
 
 
 
+>>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
