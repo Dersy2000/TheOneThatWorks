@@ -2,7 +2,7 @@ package mindcraft3495.scout;
 
 /**
  * Created by 7nys on 2/10/2018.
- */
+ **/
 
 public class TeleopActivity {
     public String switchBoxes;
