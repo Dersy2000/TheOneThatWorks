@@ -21,8 +21,8 @@ public class preMatch extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthListener;
     DatabaseReference rootRef;
     EditText etMatch,etTeam;
-    String Team;
-    String match;
+    public static String Team;
+    public static String match;
 
 
     @Override
@@ -33,15 +33,14 @@ public class preMatch extends AppCompatActivity {
         rootRef = FirebaseDatabase.getInstance().getReference();
         etMatch = (EditText)findViewById(R.id.etMatch);
         etTeam = (EditText)findViewById(R.id.etTeam);
-        this.Team = etTeam.getText().toString();
-        this.match = etMatch.getText().toString();
+
     }
 
-    public String getTeam(){
-        return this.Team;
+    public static String getTeam(){
+        return Team;
     }
-    public String getMatch(){
-        return this.match;
+    public static String getMatch(){
+        return match;
     }
 
     @Override
@@ -59,7 +58,8 @@ public class preMatch extends AppCompatActivity {
             return true;
         }
         if(id == R.id.auto) {
-
+            Team = etTeam.getText().toString();
+            match = etMatch.getText().toString();
             Intent auto = new Intent(preMatch.this, Autonomous.class);
             startActivity(auto);
         }

@@ -1,6 +1,7 @@
 package mindcraft3495.scout;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -45,6 +46,8 @@ public class Teleop extends AppCompatActivity {
         Button bClimbed;
         Button bRobot;
         Button bRobot2;
+        String team;
+        String match;
 
         private DatabaseReference mDataBase;
 
@@ -53,15 +56,18 @@ public class Teleop extends AppCompatActivity {
         private int exchangeCounter = 0;
         private int fumbledCounter = 0;
 
+        private boolean incap = false;
+        private boolean disabled = false;
+        private boolean climbed = false;
+        private boolean robot = false;
+        private boolean robot2 = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teleop);
 
-<<<<<<< HEAD
-    }
-}
-=======
+
         tvScale = (TextView)findViewById(R.id.tvScale);
         bScalePlus = (Button)findViewById(R.id.bScalePlus);
         bScaleMinus = (Button)findViewById(R.id.bScaleMinus);
@@ -84,7 +90,7 @@ public class Teleop extends AppCompatActivity {
         bRobot= (Button)findViewById(R.id.bRobot);
         bRobot2 = (Button)findViewById(R.id.bRobot2);
 
-        mDataBase = FirebaseDatabase.getInstance().getReference();
+        mDataBase = FirebaseDatabase.getInstance().getReference().child("Teams");
 
 
         bSwitchPlus.setOnClickListener(new View.OnClickListener() {
@@ -143,15 +149,95 @@ public class Teleop extends AppCompatActivity {
                 tvFumbled0.setText(valueOf(fumbledCounter));
             }
         });
+
+        bDisabled.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!incap){
+                    incap = true;
+                    bDisabled.setBackgroundColor(Color.GREEN);
+                }else{
+                    incap = false;
+                    bDisabled.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+        bIncap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!disabled){
+                    disabled = true;
+                    bIncap.setBackgroundColor(Color.GREEN);
+                }else{
+                    disabled = false;
+                    bIncap.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+        bClimbed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!climbed){
+                    if(!climbed){
+                        climbed = true;
+                        bClimbed.setBackgroundColor(Color.GREEN);
+                    }else{
+                        climbed = false;
+                        bClimbed.setBackgroundColor(Color.RED);
+                    }
+                }
+            }
+        });
+        bRobot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!robot){
+                    robot = true;
+                    bRobot.setBackgroundColor(Color.GREEN);
+                }else{
+                    robot = false;
+                    bRobot.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+        bRobot2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!robot2){
+                    robot2 = true;
+                    bRobot2.setBackgroundColor(Color.GREEN);
+                }else{
+                    robot2 = false;
+                    bRobot2.setBackgroundColor(Color.RED);
+                }
+            }
+        });
     }
 
-    private_void saveTeleopInfo(){
+
+
+
+
+
+
+    private void saveTeleopInfo(){
+
         String switchBoxes = tvSwitch0.getText().toString();
         String scaleBoxes = tvScale0.getText().toString();
         String fumbledBoxes = tvFumbled0.getText().toString();
         String exchangeBoxes = tvExchange0.getText().toString();
-        TeleopActivity teleopActivity = new TeleopActivity(switchBoxes, scaleBoxes, fumbledBoxes, exchangeBoxes);
-        mDataBase.child("Team").child("254").child("Teleop").setValue(teleopActivity);
+        String Climbed = Boolean.toString(climbed);
+        String Incap = Boolean.toString(incap);
+        String Disabled = Boolean.toString(disabled);
+        String Robot = Boolean.toString(robot);
+        String Robot2 = Boolean.toString(robot2);
+        TeleopActivity teleopActivity = new TeleopActivity(switchBoxes, scaleBoxes, fumbledBoxes, exchangeBoxes, Climbed, Incap, Disabled, Robot, Robot2);
+
+
+
+        team = preMatch.getTeam();
+        match = preMatch.getMatch();
+        mDataBase.child("Team "+ team).child("Round "+match).child("Teleop").setValue(teleopActivity);
     }
 
     @Override
@@ -187,4 +273,4 @@ public class Teleop extends AppCompatActivity {
 
 }
 
->>>>>>> 9812d5661e73302c6eb850f71b97c8d374f29112
+
