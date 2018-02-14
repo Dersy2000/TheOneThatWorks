@@ -214,14 +214,14 @@ public class Teleop extends AppCompatActivity {
         });
     }
 
-<<<<<<< HEAD
+
+
+
 
 
 
     private void saveTeleopInfo(){
-=======
-    private_void saveTeleopInfo(){
->>>>>>> 945027308ad6f567568dda6258e66f0019f7b2ed
+
         String switchBoxes = tvSwitch0.getText().toString();
         String scaleBoxes = tvScale0.getText().toString();
         String fumbledBoxes = tvFumbled0.getText().toString();
