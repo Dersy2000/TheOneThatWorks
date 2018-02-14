@@ -48,7 +48,7 @@ public class Autonomous extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         rootRef = FirebaseDatabase.getInstance().getReference().child("Teams");
-        demoRef = rootRef.child("Team").child("254").child("Auto");
+        demoRef = rootRef.child("254").child("Auto");
 
         tvBox = (TextView)findViewById(R.id.tvBox);
         bMinus = (Button)findViewById(R.id.bMinus);
