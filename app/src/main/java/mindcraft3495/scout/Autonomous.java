@@ -32,13 +32,14 @@ public class Autonomous extends AppCompatActivity {
     boolean boSwitch;
     boolean boScale;
     boolean auto;
+    String team;
+    String match;
 
     private int boxCounter = 0;
 
-<<<<<<< HEAD
-=======
+
     DatabaseReference rootRef,demoRef;
->>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,10 @@ public class Autonomous extends AppCompatActivity {
         boSwitch = false;
         boSwitch = false;
         auto = false;
+        team = preMatch.getTeam();
+        match = preMatch.getMatch();
+
+
 
 
 
@@ -115,18 +120,15 @@ public class Autonomous extends AppCompatActivity {
 
 
     }
-    private void  saveAutoInfo(){
+    private void saveAutoInfo(){
         String autoBox = tv0.getText().toString();
+
         String littleScale = Boolean.toString(boSwitch);
         String Switch = Boolean.toString(boScale);
         String Autoline = Boolean.toString(auto);
         AutoInfo autoInfo = new AutoInfo(autoBox, littleScale, Switch, Autoline);
+        rootRef.child("Team "+team).child("Round "+match).child("Auto").setValue(autoInfo);
 
-        preMatch match1 = new preMatch();
-        String team = match1.getTeam();
-        String match = match1.getMatch();
-        rootRef.push().child("Team "+team).child("Round "+match).child("Auto").setValue(autoInfo);
-        //demoRef.setValue(autoInfo);
     }
 
     @Override
@@ -156,9 +158,6 @@ public class Autonomous extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-<<<<<<< HEAD
-}
-=======
 
 }
 
@@ -166,4 +165,7 @@ public class Autonomous extends AppCompatActivity {
 
 
 
->>>>>>> 018787fc1155ad2bd486aef99e3967ffd5066dba
+
+
+
+
