@@ -159,10 +159,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/bIncap"
         app:layout_constraintTop_toBottomOf="@+id/tvExchange"
-        app:layout_constraintVertical_bias="0.124" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <TextView
         android:id="@+id/tvScale"
