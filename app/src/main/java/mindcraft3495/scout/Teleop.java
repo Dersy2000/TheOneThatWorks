@@ -178,13 +178,11 @@ public class Teleop extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(!climbed){
-                    if(!climbed){
-                        climbed = true;
-                        bClimbed.setBackgroundColor(Color.GREEN);
-                    }else{
-                        climbed = false;
-                        bClimbed.setBackgroundColor(Color.RED);
-                    }
+                    climbed = true;
+                    bClimbed.setBackgroundColor(Color.GREEN);
+                }else{
+                    climbed = false;
+                    bClimbed.setBackgroundColor(Color.RED);
                 }
             }
         });
