@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\GoAuc\\OneDrive\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "C:\\Users\\Jayden\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\GoAuc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\252f2a28ece7ff06a12599bc8376fbdd\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Jayden\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d37992fa2db1c97c0bcd7abe6a0c14eb\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
