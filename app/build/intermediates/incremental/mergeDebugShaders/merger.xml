@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\Users\Jayden\Documents\GitHub\TheOneThatWorks\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Jayden\Documents\GitHub\TheOneThatWorks\app\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\7nys\Documents\GitHub\TheOneThatWorks\app\src\debug\shaders"/></dataSet></merger>
+>>>>>>> 4333caf4bf59fa7e4719254097f88b8b07700190

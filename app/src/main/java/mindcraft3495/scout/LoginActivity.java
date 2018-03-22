@@ -28,38 +28,38 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private FirebaseAuth mAuth;
 
     private FirebaseAuth.AuthStateListener mAuthListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        findViewById(R.id.tvRegisterHere).setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
-
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
-
         bLogin = (Button) findViewById(R.id.bLogin);
+        findViewById(R.id.tvRegisterHere).setOnClickListener(this);
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                if(firebaseAuth.getCurrentUser() != null){
-                  startActivity(new Intent(LoginActivity.this, AccountActivity.class));
-                    //THIS HERE IS THE BANE OF MY EXISTENCE
+
+                if (firebaseAuth.getCurrentUser() != null) {
+                    startActivity(new Intent(LoginActivity.this, preMatch.class));
                 }
             }
         };
 
+
+
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 startSignIn();
-
             }
         });
+
     }
 
     @Override
@@ -71,30 +71,33 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onStop() {
         super.onStop();
-        if(mAuthListener != null) {
+        if(mAuthListener != null){
             FirebaseAuth.getInstance().removeAuthStateListener(mAuthListener);
         }
     }
 
-    private void startSignIn(){
+
+    private void startSignIn() {
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
 
-        if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)){
+        if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
             Toast.makeText(LoginActivity.this, "Fields Are Empty.", Toast.LENGTH_LONG).show();
 
-                }else{
+        } else {
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(!task.isSuccessful()) {
-                        Toast.makeText(LoginActivity.this, "Sign In Problem.", Toast.LENGTH_LONG).show();
+                    if (!task.isSuccessful()) {
+                        Toast.makeText(LoginActivity.this, "Registration Error", Toast.LENGTH_LONG).show();
                     }
-            }
-        });
 
+
+                }
+            });
+
+        }
     }
-}
 
     @Override
     public void onClick(View view) {
@@ -105,3 +108,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 }
+

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Sat Feb 03 14:32:28 PST 2018
 base.0=C\:\\Users\\Jayden\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
+=======
+#Tue Feb 13 17:52:09 PST 2018
+base.0=C\:\\Users\\7nys\\Documents\\GitHub\\TheOneThatWorks\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+>>>>>>> 4333caf4bf59fa7e4719254097f88b8b07700190
 path.0=classes.dex
 renamed.0=classes.dex

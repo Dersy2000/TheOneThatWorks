@@ -6,9 +6,10 @@
         android:id="@+id/menuLogout"
         android:title="Logout"
          android:visible="true"
-        app:showAsAction="never"
-
-        />
-
-
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/saveData"
+        android:title="Save Data"
+        android:visible="true"
+        app:showAsAction="never" />
 </menu>
