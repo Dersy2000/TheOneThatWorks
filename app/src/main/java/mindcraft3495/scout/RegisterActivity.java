@@ -19,11 +19,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import static mindcraft3495.scout.R.*;
 
-public class RegisterActivity extends AppCompatActivity implements OnClickListener{
+public class RegisterActivity extends AppCompatActivity {
 
     private EditText etEmail;
     private EditText etPassword;
-    private Button bRegister;
+    public Button bRegister;
     private TextView tvLogin;
 
     private FirebaseAuth mAuth;
@@ -36,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity implements OnClickListen
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         tvLogin = findViewById(R.id.tvLogin);
-
+        bRegister.setOnClickListener((OnClickListener) this);
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -76,24 +76,16 @@ public class RegisterActivity extends AppCompatActivity implements OnClickListen
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(getApplicationContext(), "User Registration Successful", Toast.LENGTH_SHORT).show();
+
                     }
                 }
             });
 
+
     }
 
-    @Override
-    public void onClick(View view) {
-
-            findViewById(R.id.bRegister);
-                registerUser();
-                startActivity(new Intent(this, LoginActivity.class));
-
-        findViewById(id.tvLogin);
-                startActivity(new Intent(this, LoginActivity.class));
 
 
-        }
     }
 
 
