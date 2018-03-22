@@ -177,7 +177,6 @@ public class Teleop extends AppCompatActivity {
         bClimbed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!climbed){
                     if(!climbed){
                         climbed = true;
                         bClimbed.setBackgroundColor(Color.GREEN);
@@ -186,7 +185,7 @@ public class Teleop extends AppCompatActivity {
                         bClimbed.setBackgroundColor(Color.RED);
                     }
                 }
-            }
+
         });
         bRobot.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -41,19 +41,18 @@
 
     <Button
         android:id="@+id/bSwitch"
-        android:layout_width="774dp"
-        android:layout_height="85dp"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
         android:text="Did they place on the switch"
         app:layout_constraintBottom_toTopOf="@+id/bScale"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv0" />
 
     <Button
         android:id="@+id/bScale"
-        android:layout_width="774dp"
-        android:layout_height="85dp"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
         android:text="Did they place on the scale"
         app:layout_constraintBottom_toTopOf="@+id/bAuto"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,14 +62,12 @@
 
     <Button
         android:id="@+id/bAuto"
-        android:layout_width="774dp"
-        android:layout_height="85dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Pass the autoline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bScale"
         app:layout_constraintVertical_bias="1.0" />
